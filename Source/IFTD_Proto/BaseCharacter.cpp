@@ -40,7 +40,7 @@ void ABaseCharacter::CalculateHealth(float delta) {
 }
 
 void ABaseCharacter::CalculateDead() {
-	if (health <= 100) {
+	if (health <= 0) {
 		isDead = true;
 	}
 	else {
